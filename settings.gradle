@@ -1,0 +1,8 @@
+rootProject.name = 'spring-framework-master-course'
+
+include 'spring-core-1'
+include 'spring-core-2'
+include 'spring-core-3'
+include 'spring-core-4'
+include 'spring-core-5'
+include 'spring-core-6'
