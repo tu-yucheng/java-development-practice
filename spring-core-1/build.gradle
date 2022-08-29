@@ -1,0 +1,17 @@
+task hello {
+    print("start building the module 'spring-core-1' ...")
+}
+
+ext {
+    javaxInject = '1'
+    guava = '31.0.1-jre'
+    springboot = '2.6.1'
+    commonsIo = '2.11.0'
+}
+
+dependencies {
+    implementation "javax.inject:javax.inject:${javaxInject}"
+    implementation "com.google.guava:guava:${guava}"
+    implementation "org.springframework.boot:spring-boot-starter"
+    implementation "commons-io:commons-io:${commonsIo}"
+}
