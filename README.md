@@ -13,3 +13,7 @@
 - [Spring Profiles](spring-core-2/docs/Spring_Profile.md)
 - [Quick Guide to Spring Bean Scopes](spring-core-2/docs/Spring_Bean_Scope.md)
 - [@Order in Spring](spring-core-2/docs/Spring_@Order.md)
+
+## spring-core-3
+
+- [Understanding getBean() in Spring](spring-core-3/docs/Spring_getBean().md)
