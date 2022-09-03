@@ -11,3 +11,4 @@
 
 - [Guide to Spring @Autowired](spring-core-2/docs/Spring_@Autowired.md)
 - [Spring Profiles](spring-core-2/docs/Spring_Profile.md)
+- [Quick Guide to Spring Bean Scopes](spring-core-2/docs/Spring_Bean_Scope.md)
