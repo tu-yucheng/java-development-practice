@@ -1,0 +1,51 @@
+task hello {
+    print("start building the module 'spring-core-2' ...")
+}
+
+ext {
+    javaxInject = '1'
+    guava = '31.0.1-jre'
+    commonsIo = '2.11.0'
+    spring = '5.3.13'
+    jackson = '2.13.0'
+    springRetry = '1.3.3'
+    javaxAnnotation = '1.3.2'
+    hibernate = '5.6.1.Final'
+    javassist = '3.22.0-GA'
+    mysql = '8.0.27'
+    hsqldb = '2.4.0'
+    hibernateValidator = '7.0.2.Final'
+    javaxServlet = '4.0.1'
+    jstl = '1.2'
+    shedlock = '2.1.0'
+}
+
+dependencies {
+    implementation "com.google.guava:guava:${guava}"
+    implementation "com.fasterxml.jackson.core:jackson-databind:${jackson}"
+    implementation 'org.springframework:spring-web'
+    implementation 'org.springframework:spring-webmvc'
+    implementation 'org.springframework:spring-orm'
+    implementation 'org.springframework:spring-context'
+    implementation 'org.springframework:spring-websocket'
+    implementation 'org.springframework:spring-messaging'
+    implementation 'org.springframework:spring-test'
+    implementation 'org.springframework:spring-aspects'
+    implementation "org.springframework.retry:spring-retry:${springRetry}"
+    implementation "javax.annotation:javax.annotation-api:${javaxAnnotation}"
+    implementation "org.hibernate:hibernate-core:${hibernate}"
+    implementation "org.javassist:javassist:${javassist}"
+    implementation "mysql:mysql-connector-java:${mysql}"
+    implementation "org.hsqldb:hsqldb:${hsqldb}"
+    implementation "org.hibernate:hibernate-validator:${hibernateValidator}"
+    implementation "javax.servlet:javax.servlet-api:${javaxServlet}"
+    implementation "javax.servlet:jstl:${jstl}"
+    implementation "net.javacrumbs.shedlock:shedlock-spring:${shedlock}"
+    implementation "net.javacrumbs.shedlock:shedlock-provider-jdbc-template:${shedlock}"
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework:spring-framework-bom:${spring}"
+    }
+}
