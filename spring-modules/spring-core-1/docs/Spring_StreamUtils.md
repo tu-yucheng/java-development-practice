@@ -1,8 +1,8 @@
 ## 1. 概述
 
-在本文中，我们将介绍StreamUtils类以及如何使用它。
+在本文中，我们将介绍Spring中的StreamUtils类以及如何使用它。
 
-简单地说，StreamUtils是一个 Spring的工具类，它包含一些处理nputStream和OutputStream流的工具方法，与 Java 8的Stream API无关。
+简单地说，StreamUtils是一个Spring的工具类，它包含一些处理InputStream和OutputStream工具方法，与Java 8的Stream API无关。
 
 ## 2. Maven依赖
 
@@ -24,9 +24,9 @@ StreamUtils类包含几个名为copy()的重载方法以及其他一些变体：
 + copyToByteArray()
 + copyString()
 
-我们可以在不使用任何第三方工具类的情况下复制流。然而，代码会很麻烦，而且更难阅读和理解。
+我们可以在不使用任何第三方工具类的情况下复制流。然而代码会很麻烦，而且更难阅读和理解。
 
-**请注意，为了简单起见，我们省略了关闭流**。
+**请注意，为了简单起见，我们省略流的关闭**。
 
 让我们看看如何将InputStream的内容复制到给定的OutputStream：
 
@@ -104,7 +104,7 @@ class CopyStreamIntegrationTest {
 }
 ```
 
-上例中方法copy()接收三个参数 - 分别是要复制的字符串、字符集以及我们要将字符串的内容复制到的OutputStream。
+上例中方法copy()接收三个参数，分别是要复制的字符串、字符集以及我们要将字符串的内容复制到的OutputStream。
 
 以下是我们如何将给定InputStream的内容复制到新字符串：
 
@@ -189,3 +189,5 @@ public class CopyStream {
 ## 5. 总结
 
 在本教程中，我们了解了StreamUtils是什么。我们还介绍了StreamUtils类的所有方法，并了解了如何使用它们。
+
+本文的完整代码可以在GitHub上找到。
