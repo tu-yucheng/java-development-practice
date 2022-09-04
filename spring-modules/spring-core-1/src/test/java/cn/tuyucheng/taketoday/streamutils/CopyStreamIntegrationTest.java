@@ -13,19 +13,16 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class CopyStreamIntegrationTest {
 
     @Test
-    @DisplayName("whenCopyInputStreamToOutputStream_thenCorrect")
-    void whenCopyInputStreamToOutputStream_thenCorrect() throws IOException {
+    void whenCopyInputStreamToOutputStream_thenCorrect () throws IOException {
         String inputFileName = "src/test/resources/input.txt";
         String outputFileName = "src/test/resources/output.txt";
         File outputFile = new File(outputFileName);
         InputStream in = new FileInputStream(inputFileName);
         OutputStream out = new FileOutputStream(outputFileName);
-
         StreamUtils.copy(in, out);
-
         assertTrue(outputFile.exists());
         String inputFileContent = CopyStream.getStringFromInputStream(new FileInputStream(inputFileName));
-        String outputFileContent = CopyStream.getStringFromInputStream(new FileInputStream(outputFileName));
+        String outputFileContent = CopyStream.getStringFromInputStream(new FileInputStream(outputFile));
         assertEquals(inputFileContent, outputFileContent);
     }
 
@@ -62,6 +59,7 @@ class CopyStreamIntegrationTest {
     @Test
     @DisplayName("whenCopyInputStreamToString_thenCorrect")
     void whenCopyInputStreamToString_thenCorrect() throws IOException {
+        int i = 39;
         String inputFileName = "src/test/resources/input.txt";
         InputStream is = new FileInputStream(inputFileName);
         String content = StreamUtils.copyToString(is, StandardCharsets.UTF_8);

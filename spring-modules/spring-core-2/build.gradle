@@ -1,9 +1,5 @@
 import org.apache.tools.ant.filters.ReplaceTokens
 
-task hello {
-    print("start building the module 'spring-core-2' ...")
-}
-
 ext {
     javaxInject = '1'
     guava = '31.0.1-jre'

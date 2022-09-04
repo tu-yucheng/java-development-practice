@@ -1,8 +1,55 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://repo.spring.io/release" }
+    }
+}
+
+plugins {
+    id "com.gradle.enterprise" version "3.10.2"
+    id "io.spring.ge.conventions" version "0.0.10"
+}
+
 rootProject.name = 'spring-framework-master-course'
 
-include 'spring-core-1'
-include 'spring-core-2'
-include 'spring-core-3'
-include 'spring-core-4'
-include 'spring-core-5'
-include 'spring-core-6'
+rootProject.children.each { project ->
+    project.buildFileName = "${project.name}.gradle"
+}
+
+include 'spring-modules'
+include 'spring-framework-core-1'
+include 'spring-framework-core-2'
+include 'spring-framework-core-3'
+include 'spring-framework-core-4'
+include 'spring-framework-core-5'
+include 'spring-framework-core-6'
+include 'spring-framework-di-1'
+include 'spring-framework-di-2'
+include 'spring-framework-di-3'
+include 'spring-framework-caching-1'
+include 'spring-framework-caching-2'
+include 'spring-framework-threads'
+include 'spring-framework-spel'
+include 'spring-framework-scheduling'
+include 'spring-framework-state-machine'
+project(':spring-framework-di-1').projectDir = file('spring-modules/spring-di-1')
+project(':spring-framework-di-2').projectDir = file('spring-modules/spring-di-2')
+project(':spring-framework-di-3').projectDir = file('spring-modules/spring-di-3')
+project(':spring-framework-core-1').projectDir = file('spring-modules/spring-core-1')
+project(':spring-framework-core-2').projectDir = file('spring-modules/spring-core-2')
+project(':spring-framework-core-3').projectDir = file('spring-modules/spring-core-3')
+project(':spring-framework-core-4').projectDir = file('spring-modules/spring-core-4')
+project(':spring-framework-core-5').projectDir = file('spring-modules/spring-core-5')
+project(':spring-framework-core-6').projectDir = file('spring-modules/spring-core-6')
+project(':spring-framework-caching-1').projectDir = file('spring-modules/spring-caching-1')
+project(':spring-framework-caching-2').projectDir = file('spring-modules/spring-caching-2')
+project(':spring-framework-threads').projectDir = file('spring-modules/spring-threads')
+project(':spring-framework-spel').projectDir = file('spring-modules/spring-spel')
+project(':spring-framework-scheduling').projectDir = file('spring-modules/spring-scheduling')
+project(':spring-framework-state-machine').projectDir = file('spring-modules/spring-state-machine')
+
+include 'spring-security-modules'
+include 'spring-reactive-modules'
+include 'spring-web-modules'
+include 'spring-boot-modules'
