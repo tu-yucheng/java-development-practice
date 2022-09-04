@@ -17,3 +17,4 @@
 ## spring-core-3
 
 - [Understanding getBean() in Spring](spring-modules/spring-core-3/docs/Spring_getBean().md)
+- [Guide to the Spring BeanFactory](spring-modules/spring-core-3/docs/Spring_BeanFactory.md)
