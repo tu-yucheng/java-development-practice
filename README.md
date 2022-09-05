@@ -18,3 +18,7 @@
 
 - [Understanding getBean() in Spring](spring-modules/spring-core-3/docs/Spring_getBean().md)
 - [Guide to the Spring BeanFactory](spring-modules/spring-core-3/docs/Spring_BeanFactory.md)
+
+## spring-boot-data-1
+
+- [Formatting JSON Dates in Spring Boot](spring-boot-modules/spring-boot-data-1/docs/SpringBoot_Format_Json.md)
