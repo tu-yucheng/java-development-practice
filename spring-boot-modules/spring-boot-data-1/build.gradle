@@ -1,0 +1,12 @@
+ext {
+    h2 = '1.4.200'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation "com.h2database:h2:${h2}"
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-tomcat'
+}
