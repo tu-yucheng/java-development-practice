@@ -23,3 +23,4 @@
 
 - [Formatting JSON Dates in Spring Boot](spring-boot-modules/spring-boot-data-1/docs/SpringBoot_Format_Json.md)
 - [Rendering Exceptions in JSON with Spring](spring-boot-modules/spring-boot-data-1/docs/SpringBoot_Exception_Json.md)
+- [Disable Spring Data Auto Configuration](spring-boot-modules/spring-boot-data-1/docs/SpringBoot_DisableAutoConfig.md)
