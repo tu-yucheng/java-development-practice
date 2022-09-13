@@ -1,5 +1,7 @@
 ## spring-core-1
 
+[![Join the chat at https://gitter.im/tu-yucheng/java-development-practice](https://badges.gitter.im/tu-yucheng/java-development-practice.svg)](https://gitter.im/tu-yucheng/java-development-practice?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 - [Introduction to Spring’s StreamUtils](spring-modules/spring-core-1/docs/Spring_StreamUtils.md)
 - [BeanNameAware and BeanFactoryAware Interfaces in Spring](spring-modules/spring-core-1/docs/Spring_Aware_Interface.md)
 - [Access a File from the Classpath in a Spring Application](spring-modules/spring-core-1/docs/Spring_Classpath_FileAccess.md)
