@@ -7,7 +7,7 @@
 
     <groupId>cn.tuyucheng.taketoday</groupId>
     <version>1.0.0</version>
-    <artifactId>spring-framework-master-course</artifactId>
+    <artifactId>java-development-practice</artifactId>
     <packaging>pom</packaging>
 
     <properties>
