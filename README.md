@@ -4,6 +4,7 @@
 
 # Java Development Practice
 
+![Language](https://img.shields.io/badge/language-java-brightgreen)
 ![Java CI](https://github.com/iluwatar/java-design-patterns/workflows/Java%20CI/badge.svg)
 [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/tu-yucheng/java-development-practice/master/LICENSE.md)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=tu-yucheng_java-development-practice&metric=ncloc)](https://sonarcloud.io/project/overview?id=tu-yucheng_java-development-practice)
