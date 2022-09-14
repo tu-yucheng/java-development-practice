@@ -17,6 +17,18 @@ rootProject.children.each { project ->
     project.buildFileName = "${project.name}.gradle"
 }
 
+include 'java-concurrency-basic-1'
+include 'java-concurrency-basic-2'
+include 'java-concurrency-basic-3'
+include 'java-concurrency-advanced-1'
+include 'java-concurrency-advanced-2'
+include 'java-concurrency-advanced-3'
+include 'java-concurrency-advanced-4'
+include 'java-concurrency-collections-1'
+include 'java-concurrency-collections-2'
+include 'java-concurrency-simple'
+include 'java-concurrency-patterns'
+
 include 'spring-core-1'
 include 'spring-core-2'
 include 'spring-core-3'
