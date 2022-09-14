@@ -10,7 +10,7 @@ public class NewThread extends Thread {
         long startTime = System.currentTimeMillis();
         while (true) {
             for (int i = 0; i < 10; i++) {
-                log.info("{}: New Thread is runnning... {}", this.getName(), i);
+                log.info("{}: New Thread is running... {}", this.getName(), i);
                 System.out.println(this.getName() + ": New Thread is running..." + i);
                 try {
                     // Wait for one sec, so it doesn't print too fast
