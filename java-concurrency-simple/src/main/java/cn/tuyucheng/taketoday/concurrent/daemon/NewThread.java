@@ -14,6 +14,7 @@ public class NewThread extends Thread {
                     // Wait for one sec, so it doesn't print too fast
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
                     log.error("context", e);
                 }
             }
