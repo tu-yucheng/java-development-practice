@@ -4,7 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class WaitingState implements Runnable {
-    public static Thread t1;
+    private static Thread t1;
 
     public static void main(String[] args) {
         t1 = new Thread(new WaitingState());
@@ -32,7 +32,7 @@ public class WaitingState implements Runnable {
                 log.error("context", e);
             }
 
-            System.out.println(WaitingState.t1.getState());
+            log.info("state of thread t1: {}", WaitingState.t1.getState());
         }
     }
 }

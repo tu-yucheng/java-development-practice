@@ -12,7 +12,7 @@ public class TimedWaitingState {
         // The following sleep will give enough time for ThreadScheduler
         // to start processing of thread t1
         Thread.sleep(1000);
-        System.out.println(t1.getState());
+        log.info("state of thread t1: {}", t1.getState());
     }
 
     static class DemoThread implements Runnable {

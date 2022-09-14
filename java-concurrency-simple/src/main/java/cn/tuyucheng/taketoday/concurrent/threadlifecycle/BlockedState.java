@@ -1,5 +1,8 @@
 package cn.tuyucheng.taketoday.concurrent.threadlifecycle;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class BlockedState {
 
     public static void main(String[] args) throws InterruptedException {
@@ -11,7 +14,7 @@ public class BlockedState {
 
         Thread.sleep(1000);
 
-        System.out.println(t2.getState());
+        log.info("state of thread t2: {}", t2.getState());
         System.exit(0);
     }
 
