@@ -68,7 +68,7 @@ class ThreadJoinUnitTest {
     }
     
     @Test
-    @Disabled  // test that doesn't stop
+    @Disabled("test that doesn't stop")
     void givenThreadTerminated_checkForEffect_notGuaranteed() {
         SampleThread t4 = new SampleThread(10);
         t4.start();
