@@ -1,7 +1,10 @@
 package cn.tuyucheng.taketoday.concurrent.threadlifecycle;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class TimedWaitingState {
-    
+
     public static void main(String[] args) throws InterruptedException {
         DemoThread obj1 = new DemoThread();
         Thread t1 = new Thread(obj1);
@@ -19,7 +22,7 @@ public class TimedWaitingState {
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
-                e.printStackTrace();
+                log.error("context", e);
             }
         }
     }
