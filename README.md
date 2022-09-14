@@ -54,4 +54,6 @@
 ## java-concurrency-simple
 
 - [Life Cycle of a Thread in Java](java-concurrency-simple/docs/Java_Thread_LifeCycle.md)
+- [How to Start a Thread in Java](java-concurrency-simple/docs/Java_StartThread.md)
+- [Thread's wait and notify() Methods in Java](java-concurrency-simple/docs/Java_Wait_Notify.md)
 - [The Thread.join() Method in Java](java-concurrency-simple/docs/Java_Thread_Join.md)
