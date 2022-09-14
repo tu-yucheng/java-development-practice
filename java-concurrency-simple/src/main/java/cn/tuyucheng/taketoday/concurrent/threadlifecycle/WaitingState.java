@@ -1,5 +1,8 @@
 package cn.tuyucheng.taketoday.concurrent.threadlifecycle;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class WaitingState implements Runnable {
     public static Thread t1;
 
@@ -16,7 +19,7 @@ public class WaitingState implements Runnable {
             t2.join();
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
-            e.printStackTrace();
+            log.error("context", e);
         }
     }
 
@@ -26,7 +29,7 @@ public class WaitingState implements Runnable {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
-                e.printStackTrace();
+                log.error("context", e);
             }
 
             System.out.println(WaitingState.t1.getState());
