@@ -13,7 +13,7 @@ import java.io.StringWriter;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Slf4j
-public class NetworkIntegrationTest {
+class NetworkIntegrationTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
     private String expected;
