@@ -50,3 +50,8 @@
 - [Formatting JSON Dates in Spring Boot](spring-boot-data-1/docs/SpringBoot_Format_Json.md)
 - [Rendering Exceptions in JSON with Spring](spring-boot-data-1/docs/SpringBoot_Exception_Json.md)
 - [Disable Spring Data Auto Configuration](spring-boot-data-1/docs/SpringBoot_DisableAutoConfig.md)
+
+## java-concurrency-simple
+
+- [Life Cycle of a Thread in Java](java-concurrency-simple/docs/Java_Thread_LifeCycle.md)
+- [The Thread.join() Method in Java](java-concurrency-simple/docs/Java_Thread_Join.md)
