@@ -1,0 +1,49 @@
+plugins {
+    id 'java'
+    id 'jacoco'
+    id "org.sonarqube" version "3.3"
+}
+
+jacoco {
+    toolVersion = "0.8.8"
+    reportsDirectory = layout.buildDirectory.dir('customJacocoReportDir')
+}
+
+test {
+    useJUnitPlatform()
+    finalizedBy jacocoTestReport // report is always generated after tests run
+}
+
+apply plugin: "org.sonarqube"
+
+sonarqube {
+    properties {
+        property "sonar.host.url", "https://sonarcloud.io"
+        property "sonar.login", "tuyucheng"
+        property "sonar.password", "tu001118"
+    }
+}
+
+jacocoTestReport {
+    dependsOn test // tests are required to run before generating the report
+    reports {
+        xml.enabled = true
+        // xml.required = false
+        // csv.required = false
+        // html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+    }
+}
+
+// jacocoTestReport {
+//     dependsOn test // tests are required to run before generating the report
+//
+//     afterEvaluate {
+//         classDirectories.setFrom(files(classDirectories.files.collect {
+//             fileTree(dir: it, exclude: [
+//                     "cn/tuyucheng/taketoday/**/ExcludedPOJO.class",
+//                     "cn/tuyucheng/taketoday/**/*DTO.*",
+//                     "**/config/*"
+//             ])
+//         }))
+//     }
+// }
