@@ -41,11 +41,15 @@
 - [Quick Guide to Spring Bean Scopes](spring-framework-core-2/docs/Spring_Bean_Scope.md)
 - [@Order in Spring](spring-framework-core-2/docs/Spring_@Order.md)
 - [Spring @Primary Annotation](spring-framework-core-2/docs/Spring_@Primary.md)
+- [Spring Events](spring-framework-core-2/docs/Spring_Events.md)
+- [Spring Null-Safety Annotations](spring-framework-core-2/docs/Spring_NullSafety.md)
 
 ## spring-framework-core-3
 
 - [Understanding getBean() in Spring](spring-framework-core-3/docs/Spring_getBean().md)
 - [Guide to the Spring BeanFactory](spring-framework-core-3/docs/Spring_BeanFactory.md)
+- [How to use the Spring FactoryBean?](spring-framework-core-3/docs/Spring_FactoryBean.md)
+- [Design Patterns in the Spring Framework](spring-framework-core-3/docs/Spring_DesignPattern.md)
 
 ## spring-boot-data-1
 
@@ -59,3 +63,6 @@
 - [How to Start a Thread in Java](java-concurrency-simple/docs/Java_StartThread.md)
 - [Thread's wait and notify() Methods in Java](java-concurrency-simple/docs/Java_Wait_Notify.md)
 - [The Thread.join() Method in Java](java-concurrency-simple/docs/Java_Thread_Join.md)
+- [Guide to the Synchronized Keyword in Java](java-concurrency-simple/docs/Java_Synchronized.md)
+- [Guide to the Volatile Keyword in Java](java-concurrency-simple/docs/Java_Volatile.md)
+- [A Guide to the Java ExecutorService](java-concurrency-simple/docs/Java_ExecutorService.md)
