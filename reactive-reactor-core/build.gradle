@@ -1,0 +1,8 @@
+ext {
+    reactor = '3.4.12'
+}
+
+dependencies {
+    implementation "io.projectreactor:reactor-core:${reactor}"
+    testImplementation "io.projectreactor:reactor-test:${reactor}"
+}
