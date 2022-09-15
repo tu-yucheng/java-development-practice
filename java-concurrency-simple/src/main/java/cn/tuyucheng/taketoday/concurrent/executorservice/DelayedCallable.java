@@ -1,8 +1,11 @@
 package cn.tuyucheng.taketoday.concurrent.executorservice;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.concurrent.Callable;
 import java.util.concurrent.CountDownLatch;
 
+@Slf4j
 public class DelayedCallable implements Callable<String> {
     private final String name;
     private final long period;
@@ -27,7 +30,7 @@ public class DelayedCallable implements Callable<String> {
             }
         } catch (InterruptedException ex) {
             // handle exception
-            ex.printStackTrace();
+            log.error("context", ex);
             Thread.currentThread().interrupt();
         }
         return name;

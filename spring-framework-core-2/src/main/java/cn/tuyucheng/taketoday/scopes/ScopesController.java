@@ -3,6 +3,7 @@ package cn.tuyucheng.taketoday.scopes;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.annotation.Resource;
 
@@ -18,7 +19,7 @@ public class ScopesController {
     @Resource(name = "applicationScopedBean")
     HelloMessageGenerator applicationScopedBean;
 
-    @RequestMapping("/scopes/request")
+    @RequestMapping(value = "/scopes/request",  method = RequestMethod.GET)
     public String getRequestScopeMessage(final Model model) {
         model.addAttribute("previousMessage", requestScopedBean.getMessage());
         requestScopedBean.setMessage("Request Scope Message!");
@@ -26,7 +27,7 @@ public class ScopesController {
         return "scopesExample";
     }
 
-    @RequestMapping("/scopes/session")
+    @RequestMapping(value = "/scopes/session", method = RequestMethod.GET)
     public String getSessionScopeMessage(final Model model) {
         model.addAttribute("previousMessage", sessionScopedBean.getMessage());
         sessionScopedBean.setMessage("Session Scope Message!");
@@ -34,7 +35,7 @@ public class ScopesController {
         return "scopesExample";
     }
 
-    @RequestMapping("/scopes/application")
+    @RequestMapping(value = "/scopes/application" ,method = RequestMethod.GET)
     public String getApplicationScopeMessage(final Model model) {
         model.addAttribute("previousMessage", applicationScopedBean.getMessage());
         applicationScopedBean.setMessage("Application Scope Message!");
