@@ -61,6 +61,12 @@
 ## reactive-reactor-core
 
 - [Combining Publishers in Project Reactor](reactive-reactor-core/docs/Reactor_CombineStreams.md)
+- [Programmatically Creating Sequences with Project Reactor](reactive-reactor-core/docs/Reactor_Flux_Sequences.md)
+
+## reactive-spring-1
+
+- [Exploring the Spring 5 WebFlux URL Matching](reactive-spring-1/docs/Spring_MVC_URL_Matching.md)
+- [Reactive WebSockets with Spring 5](reactive-spring-1/docs/Spring_Reactive_WebSockets.md)
 
 ## reactive-spring-4
 
