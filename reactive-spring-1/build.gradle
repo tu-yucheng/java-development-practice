@@ -1,0 +1,33 @@
+ext {
+    rxjava = '2.2.21'
+    commonsCollections4 = '4.4'
+    geronimo = '1.0'
+}
+
+task copyAssets(type: Copy) {
+    from 'src/main/assets'
+    into 'build/classes/assets'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-tomcat'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'javax.json.bind:javax.json.bind-api'
+    implementation "org.apache.geronimo.specs:geronimo-json_1.1_spec:${geronimo}"
+    implementation 'org.apache.johnzon:johnzon-jsonb'
+    implementation 'org.apache.commons:commons-lang3'
+    implementation 'org.springframework.boot:spring-boot-devtools'
+    implementation 'org.springframework:spring-test'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
+    testImplementation 'io.projectreactor:reactor-test'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.session:spring-session-core'
+    implementation 'org.springframework.session:spring-session-data-redis'
+    testImplementation "org.apache.commons:commons-collections4:${commonsCollections4}"
+    implementation 'io.reactivex.rxjava2:rxjava'
+    implementation 'org.apache.httpcomponents:httpclient'
+}
