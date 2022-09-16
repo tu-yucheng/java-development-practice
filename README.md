@@ -67,6 +67,8 @@
 
 - [Exploring the Spring 5 WebFlux URL Matching](reactive-spring-1/docs/Spring_MVC_URL_Matching.md)
 - [Reactive WebSockets with Spring 5](reactive-spring-1/docs/Spring_Reactive_WebSockets.md)
+- [Spring Webflux Filters](reactive-spring-1/docs/Spring_WebFlux_Filter.md)
+- [How to Set a Header on a Response with Spring 5](reactive-spring-1/docs/Spring_WebFlux_Header.md)
 
 ## reactive-spring-4
 
