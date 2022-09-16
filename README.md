@@ -69,6 +69,7 @@
 - [Introduction to the Functional Web Framework in Spring 5](reactive-spring-4/docs/Spring_FunctionWeb.md)
 - [Spring 5 WebClient](reactive-spring-4/docs/Spring_WebClient.md)
 - [Spring WebClient vs. RestTemplate](reactive-spring-4/docs/Spring_WebClient_RestTemplate.md)
+- [Spring Security 5 for Reactive Applications](reactive-spring-4/docs/Spring_Reactive_Security.md)
 
 ## java-concurrency-simple
 
