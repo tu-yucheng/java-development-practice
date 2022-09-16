@@ -67,6 +67,8 @@
 - [Intro To Reactor Core](reactive-spring-4/docs/Reactor_Core.md)
 - [Guide to Spring 5 WebFlux](reactive-spring-4/docs/Spring_WebFlux.md)
 - [Introduction to the Functional Web Framework in Spring 5](reactive-spring-4/docs/Spring_FunctionWeb.md)
+- [Spring 5 WebClient](reactive-spring-4/docs/Spring_WebClient.md)
+- [Spring WebClient vs. RestTemplate](reactive-spring-4/docs/Spring_WebClient_RestTemplate.md)
 
 ## java-concurrency-simple
 
