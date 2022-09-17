@@ -1,0 +1,24 @@
+plugins {
+    id 'org.springframework.boot'
+}
+
+ext {
+    reactor = '3.4.12'
+    testcontainersMongo = '1.16.2'
+    caffeine = '2.9.2'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'org.springframework.boot:spring-boot-starter-rsocket'
+    testImplementation 'io.projectreactor:reactor-test'
+    implementation 'com.squareup.okhttp3:mockwebserver'
+
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation "io.projectreactor.addons:reactor-extra:${reactor}"
+    implementation "com.github.ben-manes.caffeine:caffeine:${caffeine}"
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
+    testImplementation 'io.projectreactor:reactor-test'
+    testImplementation "org.testcontainers:mongodb:${testcontainersMongo}"
+    implementation 'com.squareup.okhttp3:mockwebserver'
+}
