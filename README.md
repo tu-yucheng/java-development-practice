@@ -76,6 +76,8 @@
 - [Validation for Functional Endpoints in Spring 5](reactive-spring-2/docs/Functional_Endpoints_Validation.md)
 - [Testing Reactive Streams Using StepVerifier and TestPublisher](reactive-spring-2/docs/Reactive_StepVerifier.md)
 - [Static Content in Spring WebFlux](reactive-spring-2/docs/WebFlux_Static_Content.md)
+- [Server-Sent Events in Spring](reactive-spring-2/docs/WebFlux_Server_SendEvents.md)
+- [Backpressure Mechanism in Spring WebFlux](reactive-spring-2/docs/WebFlux_Backpressure.md)
 
 ## reactive-spring-4
 
