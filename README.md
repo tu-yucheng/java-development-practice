@@ -79,6 +79,11 @@
 - [Server-Sent Events in Spring](reactive-spring-2/docs/WebFlux_Server_SendEvents.md)
 - [Backpressure Mechanism in Spring WebFlux](reactive-spring-2/docs/WebFlux_Backpressure.md)
 
+## reactive-spring-3
+
+- [Logging a Reactive Sequence](reactive-spring-3/docs/Reactive_Logging_Sequence.md)
+- [Reading Flux Into a Single InputStream Using Spring Reactive WebClient](reactive-spring-3/docs/Reactive_ReadFluxTo_InputStream.md)
+
 ## reactive-spring-4
 
 - [Intro To Reactor Core](reactive-spring-4/docs/Reactor_Core.md)
