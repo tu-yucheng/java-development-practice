@@ -51,6 +51,8 @@
 - [How to use the Spring FactoryBean?](spring-framework-core-3/docs/Spring_FactoryBean.md)
 - [Design Patterns in the Spring Framework](spring-framework-core-3/docs/Spring_DesignPattern.md)
 - [Difference Between BeanFactory and ApplicationContext](spring-framework-core-3/docs/Spring_BeanFactory_ApplicationContext.md)
+- [A Spring Custom Annotation for a Better DAO](spring-framework-core-3/docs/Spring_Annotation_BeanPreProcessor.md)
+- [Custom Scope in Spring](spring-framework-core-3/docs/Spring_Custom_Scope.md)
 
 ## spring-boot-data-1
 
