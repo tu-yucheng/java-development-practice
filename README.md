@@ -69,6 +69,10 @@
 - [Formatting JSON Dates in Spring Boot](spring-boot-data-1/docs/SpringBoot_Format_Json.md)
 - [Rendering Exceptions in JSON with Spring](spring-boot-data-1/docs/SpringBoot_Exception_Json.md)
 - [Disable Spring Data Auto Configuration](spring-boot-data-1/docs/SpringBoot_DisableAutoConfig.md)
+- [Repositories with Multiple Spring Data Modules](spring-boot-data-1/docs/SpringBoot_Multi_DataModule.md)
+- [Spring Custom Property Editor](spring-boot-data-1/docs/SpringBoot_PropertyEditor.md)
+- [Using @JsonComponent in Spring Boot](spring-boot-data-1/docs/SpringBoot_@JsonComponent.md)
+- [Guide To Running Logic on Startup in Spring](spring-boot-data-1/docs/SpringBoot_RunSetupLogic.md)
 
 ## reactive-reactor-core
 
