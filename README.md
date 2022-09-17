@@ -74,6 +74,16 @@
 - [Using @JsonComponent in Spring Boot](spring-boot-data-1/docs/SpringBoot_@JsonComponent.md)
 - [Guide To Running Logic on Startup in Spring](spring-boot-data-1/docs/SpringBoot_RunSetupLogic.md)
 
+## spring-boot-data-2
+
+- [HttpMessageNotWritableException: No Converter for [class …] With Preset Content-Type]()
+- [Spring Boot: Customize the Jackson ObjectMapper]()
+- [“HttpMessageNotWritableException: No converter found for return value of type”]()
+- [Creating a Read-Only Repository with Spring Data]()
+- [Using JaVers for Data Model Auditing in Spring Data]()
+- [BootstrapMode for JPA Repositories]()
+- [Dynamic DTO Validation Config Retrieved from the Database]()
+
 ## reactive-reactor-core
 
 - [Combining Publishers in Project Reactor](reactive-reactor-core/docs/Reactor_CombineStreams.md)
@@ -114,9 +124,9 @@
 - [Spring Boot Reactor Netty Configuration](reactive-spring-webflux-1/docs/WebFlux_Netty_Config.md)
 - [How to Return 404 with Spring WebFlux](reactive-spring-webflux-1/docs/WebFlux_ResponseStatus.md)
 - [RSocket Using Spring Boot](reactive-spring-webflux-1/docs/Reactive_RSocket.md)
-- [Spring MVC Async vs Spring WebFlux]()
-- [Set a Timeout in Spring 5 Webflux WebClient]()
-- [Guide to Retry in Spring WebFlux]()
+- [Spring MVC Async vs Spring WebFlux](reactive-spring-webflux-1/docs/WebFlux_Async.md)
+- [Set a Timeout in Spring 5 Webflux WebClient](reactive-spring-webflux-1/docs/WebFlux_Timeout.md)
+- [Guide to Retry in Spring WebFlux](reactive-spring-webflux-1/docs/WebFlux_Retry.md)
 
 ## java-concurrency-simple
 
