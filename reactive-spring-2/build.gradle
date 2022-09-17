@@ -3,6 +3,11 @@ ext {
     wiremock = '2.24.0'
 }
 
+task copyAssets(type: Copy) {
+    from 'src/main/assets'
+    into 'build/classes/assets'
+}
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.boot:spring-boot-starter-security'
