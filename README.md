@@ -54,6 +54,16 @@
 - [A Spring Custom Annotation for a Better DAO](spring-framework-core-3/docs/Spring_Annotation_BeanPreProcessor.md)
 - [Custom Scope in Spring](spring-framework-core-3/docs/Spring_Custom_Scope.md)
 
+## spring-framework-core-4
+
+- [Creating Spring Beans Through Factory Methods](spring-framework-core-4/docs/Spring_FactoryMethod.md)
+- [How to dynamically Autowire a Bean in Spring]()
+- [Spring @Import Annotation]()
+- [Spring BeanPostProcessor]()
+- [Using @Autowired in Abstract Classes]()
+- [Constructor Injection in Spring with Lombok]()
+- [The Spring ApplicationContext]()
+
 ## spring-boot-data-1
 
 - [Formatting JSON Dates in Spring Boot](spring-boot-data-1/docs/SpringBoot_Format_Json.md)
