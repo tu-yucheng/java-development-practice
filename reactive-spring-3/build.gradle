@@ -1,0 +1,10 @@
+ext {
+    reactorSpring = '1.0.1.RELEASE'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+    implementation "org.projectreactor:reactor-spring:${reactorSpring}"
+    testImplementation 'io.projectreactor:reactor-test'
+}
