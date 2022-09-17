@@ -69,6 +69,11 @@
 - [Reactive WebSockets with Spring 5](reactive-spring-1/docs/Spring_Reactive_WebSockets.md)
 - [Spring Webflux Filters](reactive-spring-1/docs/Spring_WebFlux_Filter.md)
 - [How to Set a Header on a Response with Spring 5](reactive-spring-1/docs/Spring_WebFlux_Header.md)
+- [A Guide to Spring Session Reactive Support: WebSession](reactive-spring-1/docs/Spring_Reactive_Session.md)
+
+## reactive-spring-2
+
+- [Validation for Functional Endpoints in Spring 5](reactive-spring-2/docs/Functional_Endpoints_Validation.md)
 
 ## reactive-spring-4
 
@@ -88,3 +93,4 @@
 - [Guide to the Synchronized Keyword in Java](java-concurrency-simple/docs/Java_Synchronized.md)
 - [Guide to the Volatile Keyword in Java](java-concurrency-simple/docs/Java_Volatile.md)
 - [A Guide to the Java ExecutorService](java-concurrency-simple/docs/Java_ExecutorService.md)
+- [Guide To CompletableFuture](java-concurrency-simple/docs/Java_CompletableFuture.md)
