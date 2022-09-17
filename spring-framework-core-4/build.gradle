@@ -1,0 +1,20 @@
+ext {
+    guava = '31.0.1-jre'
+    spring = '5.3.13'
+    javaxAnnotation = '1.3.2'
+    javaxServlet = '4.0.1'
+    awaitility = '4.0.2'
+}
+
+dependencies {
+    implementation "org.springframework:spring-context:${spring}"
+    implementation "org.springframework:spring-core:${spring}"
+    implementation "org.springframework:spring-web:${spring}"
+    implementation "org.springframework:spring-webmvc:${spring}"
+    implementation "org.springframework:spring-expression:${spring}"
+    implementation "com.google.guava:guava:${guava}"
+    testImplementation "org.springframework:spring-test:${spring}"
+    testImplementation "org.awaitility:awaitility:${awaitility}"
+    implementation "javax.servlet:javax.servlet-api:${javaxServlet}"
+    implementation "javax.annotation:javax.annotation-api:${javaxAnnotation}"
+}
