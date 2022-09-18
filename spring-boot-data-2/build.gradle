@@ -1,0 +1,13 @@
+ext {
+    h2 = '1.4.200'
+    javers = '6.6.5'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation "org.javers:javers-spring-boot-starter-sql:${javers}"
+    implementation "com.h2database:h2:${h2}"
+}
