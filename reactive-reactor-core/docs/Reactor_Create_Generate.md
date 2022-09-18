@@ -1,32 +1,29 @@
 ## 1. 概述
 
-Reactor为JVM 提供了一个完全非阻塞的编程基础。它提供了Reactive Streams规范的实现，并提供了可组合的异步API，例如Flux。
+Reactor为JVM提供了一个完全非阻塞的编程基础。它提供了Reactive Streams规范的实现，并提供了可组合的异步API，例如Flux。
 Flux是具有多个响应式运算符的响应式流发布者。
-它发出0到N个元素，然后成功或错误地完成。它可以根据我们的需要以几种不同的方式创建。
+它发出0到N个元素，然后成功或错误地完成。可以根据我们的需要以几种不同的方式创建。
 
 ## 2. 理解Flux
 
 **Flux是一个Reactive Stream发布者，可以发出0到N个元素**。它有几个运算符用于生成、编排和转换Flux序列。
 Flux可以成功完成，也可以错误完成。
 
-Flux API在Flux上提供了几个静态工厂方法来创建源或从多个回调类型生成。它还提供实例方法和运算符来构建异步处理管道。该管道产生一个异步序列。
+Flux API在Flux上提供了几个静态工厂方法，用于创建源或从多个回调类型生成。它还提供实例方法和运算符来构建异步处理管道。该管道生成一个异步序列。
 
 在接下来的部分中，让我们看看Flux中generate()和create()方法的一些用法。
 
-## 3. Maven依赖
+## 3. Gradle依赖
 
-```
-<dependency>
-    <groupId>io.projectreactor</groupId>
-    <artifactId>reactor-core</artifactId>
-    <version>3.4.17</version>
-</dependency>
-<dependency>
-    <groupId>io.projectreactor</groupId>
-    <artifactId>reactor-test</artifactId>
-    <version>3.4.17</version>
-    <scope>test</scope>
-</dependency>
+```groovy
+ext {
+    reactor = '3.4.12'
+}
+
+dependencies {
+    implementation "io.projectreactor:reactor-core:${reactor}"
+    testImplementation "io.projectreactor:reactor-test:${reactor}"
+}
 ```
 
 ## 4. generate
@@ -67,7 +64,7 @@ public class CharacterGenerator {
 + 第一个是Callable函数。此函数使用值为97定义生成器的初始状态。
 + 第二个是BiFunction。这是一个消费SynchronousSink的生成器函数。每当调用接收器的next()方法时，此SynchronousSink都会返回一个元素。
 
-顾名思义，SynchronousSink实例以同步的方式工作。但是，我们不能在每个生成器调用中多次调用SynchronousSink对象的next()方法。
+顾名思义，SynchronousSink实例以同步的方式工作。但是，**我们不能在每个生成器调用中多次调用SynchronousSink对象的next()方法**。
 
 让我们使用StepVerifier验证生成的序列：
 
@@ -92,7 +89,8 @@ expectComplete()指示Flux的元素发射完成。
 
 ## 5. create
 
-Flux中的create()方法用于计算不受应用程序状态影响的多个(0到无穷大)值。这是因为Flux#create()方法的底层方法一直在计算元素。
+**当我们想要计算不受应用程序状态影响的多个(0到无穷大)值时，使用Flux中的create()方法**。
+这是因为Flux#create()方法的底层方法一直在计算元素。
 
 此外，下游系统决定了它需要多少元素。因此，如果下游系统无法跟上，则会缓冲或删除已发出的元素。
 
@@ -112,10 +110,10 @@ public class CharacterCreator {
 }
 ```
 
-我们可以注意到create运算符要求我们使用使用FluxSink作为消费者函数参数而不是generate()中使用的SynchronousSink。
-在这种情况下，我们将为元素集合中的每个元素调用next()，逐个发出。
+我们可以注意到，create运算符要求我们使用FluxSink作为消费者函数参数，而不是generate()中使用的SynchronousSink。
+在这种情况下，我们将为元素集合中的每个元素调用next()，并逐个发出。
 
-现在让我们使用带有两个字符序列的CharacterCreator：
+现在让我们将CharacterCreator用于两个字符序列：
 
 ```java
 public class CharacterUnitTest {
@@ -140,7 +138,7 @@ public class CharacterUnitTest {
 
 现在让我们定义一个characterCreator实例和两个线程实例：
 
-```
+```text
 CharacterCreator characterCreator = new CharacterCreator();
 Thread producerThread1 = new Thread(() -> characterCreator.consumer.accept(sequence1));
 Thread producerThread2 = new Thread(() -> characterCreator.consumer.accept(sequence2));
@@ -148,14 +146,14 @@ Thread producerThread2 = new Thread(() -> characterCreator.consumer.accept(seque
 
 现在我们创建了两个线程实例，它们将为发布者提供元素。当调用accept运算符时，字符元素开始流入序列源。接下来，我们订阅新的合并序列：
 
-```
+```text
 List<Character> consolidated = new ArrayList<>();
 characterCreator.createCharacterSequence().subscribe(consolidated::add);
 ```
 
-请注意，createCharacterSequence()返回一个我们订阅的Flux，并消费合并列表中的元素。接下来，让我们触发查看元素在两个不同线程上移动的整个过程：
+createCharacterSequence()返回一个我们订阅的Flux，并消费合并列表中的元素。接下来，让我们触发查看元素在两个不同线程上移动的整个过程：
 
-```
+```text
 producerThread1.start();
 producerThread2.start();
 producerThread1.join();
@@ -168,7 +166,7 @@ producerThread2.join();
 assertThat(consolidated).containsExactlyInAnyOrder('a', 'b', 'c', 'a', 'b');
 ```
 
-接收到的序列中的前三个字符来自sequence1。后两个字符来自sequence2。由于这是一个异步操作，因此无法保证这些序列中元素的顺序。
+接收到的序列中的前三个字符来自sequence1，后两个字符来自sequence2。由于这是一个异步操作，因此无法保证这些序列中元素的顺序。
 
 ## 6. create与generate的比较
 
@@ -184,7 +182,7 @@ assertThat(consolidated).containsExactlyInAnyOrder('a', 'b', 'c', 'a', 'b');
 
 ## 7. 总结
 
-在本文中，我们讨介绍Flux API的create和generate方法之间的区别。
+在本文中，我们介绍了Flux API的create和generate方法之间的区别。
 
 首先，我们介绍了响应式编程的概念并简要概述了Flux API。然后我们讨论了Flux API的create和generate方法。
 最后，我们列出了Flux API中create和generate方法之间的一些差异。
