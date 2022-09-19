@@ -1,6 +1,5 @@
 ext {
     rxjava = '2.2.21'
-    commonsCollections4 = '4.4'
     geronimo = '1.0'
 }
 
