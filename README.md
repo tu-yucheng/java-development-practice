@@ -94,6 +94,24 @@
 - [BootstrapMode for JPA Repositories](spring-boot-data-2/docs/SpringBoot_JPA_BootstrapMode.md)
 - [Dynamic DTO Validation Config Retrieved from the Database](spring-boot-data-2/docs/SpringBoot_DynamicDTO_Validation.md)
 
+## spring-security-core-1
+
+- [Spring Security – @PreFilter and @PostFilter](spring-security-core-1/docs/SpringSecurity_@PreFilter_@PostFilter.md)
+- [Spring Boot Authentication Auditing Support](spring-security-core-1/docs/SpringSecurity_AuthenticationAudit.md)
+- [Introduction to Spring Method Security](spring-security-core-1/docs/SpringSecurity_MethodSecurity.md)
+- [Overview and Need for DelegatingFilterProxy in Spring](spring-security-core-1/docs/SpringSecurity_DelegatingFilterProxy.md)
+- [Deny Access on Missing @PreAuthorize to Spring Controller Methods](spring-security-core-1/docs/SpringSecurity_DenyAccess.md)
+- [Spring Security: Check If a User Has a Role in Java](spring-security-core-1/docs/SpringSecurity_CheckUserRole.md)
+- [Filtering Jackson JSON Output Based on Spring Security Role](spring-security-core-1/docs/SpringSecurity_RoleFilterJson.md)
+
+## spring-security-core-2
+
+- [Handle Spring Security Exceptions](https://www.baeldung.com/spring-security-exceptions)
+- [Handle Spring Security Exceptions With @ExceptionHandler](https://www.baeldung.com/spring-security-exceptionhandler)
+- [Prevent Cross-Site Scripting (XSS) in a Spring Application](https://www.baeldung.com/spring-prevent-xss)
+- [Guide to the AuthenticationManagerResolver in Spring Security](https://www.baeldung.com/spring-security-authenticationmanagerresolver)
+- [A Custom Spring SecurityConfigurer](https://www.baeldung.com/spring-security-custom-configurer)
+
 ## reactive-reactor-core
 
 - [Combining Publishers in Project Reactor](reactive-reactor-core/docs/Reactor_CombineStreams.md)
