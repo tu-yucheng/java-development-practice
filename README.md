@@ -64,6 +64,16 @@
 - [Constructor Injection in Spring with Lombok](spring-framework-core-4/docs/Spring_Lombok.md)
 - [The Spring ApplicationContext](spring-framework-core-4/docs/Spring_ApplicationContext.md)
 
+## spring-framework-core-5
+
+- [Spring @Component Annotation]()
+- [Solving Spring’s “not eligible for auto-proxying” Warning]()
+- [Spring Bean Names]()
+- [AliasFor Annotation in Spring]()
+- [A Quick Guide to the Spring @Lazy Annotation]()
+- [Finding the Spring Version]()
+- [How Does the Spring Singleton Bean Serve Concurrent Requests?]()
+
 ## spring-boot-data-1
 
 - [Formatting JSON Dates in Spring Boot](spring-boot-data-1/docs/SpringBoot_Format_Json.md)
@@ -76,13 +86,13 @@
 
 ## spring-boot-data-2
 
-- [HttpMessageNotWritableException: No Converter for [class …] With Preset Content-Type]()
-- [Spring Boot: Customize the Jackson ObjectMapper]()
-- [“HttpMessageNotWritableException: No converter found for return value of type”]()
-- [Creating a Read-Only Repository with Spring Data]()
-- [Using JaVers for Data Model Auditing in Spring Data]()
-- [BootstrapMode for JPA Repositories]()
-- [Dynamic DTO Validation Config Retrieved from the Database]()
+- [HttpMessageNotWritableException: No Converter for [class …] With Preset Content-Type](spring-boot-data-2/docs/SpringBoot_NoConverter_Preset.md)
+- [Spring Boot: Customize the Jackson ObjectMapper](spring-boot-data-2/docs/SpringBoot_Custom_JacksonMapper.md)
+- [“HttpMessageNotWritableException: No converter found for return value of type”](spring-boot-data-2/docs/SpringBoot_NoConverterFound.md)
+- [Creating a Read-Only Repository with Spring Data](spring-boot-data-2/docs/SpringBoot_ReadonlyRepository.md)
+- [Using JaVers for Data Model Auditing in Spring Data](spring-boot-data-2/docs/SpringBoot_Javers_Audit.md)
+- [BootstrapMode for JPA Repositories](spring-boot-data-2/docs/SpringBoot_JPA_BootstrapMode.md)
+- [Dynamic DTO Validation Config Retrieved from the Database](spring-boot-data-2/docs/SpringBoot_DynamicDTO_Validation.md)
 
 ## reactive-reactor-core
 
