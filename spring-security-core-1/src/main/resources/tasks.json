@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "description": "Send a fax",
+        "assignee": "pam"
+    },
+    {
+        "id": 2,
+        "description": "Print a document",
+        "assignee": "pam"
+    },
+    {
+        "id": 3,
+        "description": "Answer the phone",
+        "assignee": "pam"
+    },
+    {
+        "id": 4,
+        "description": "Call a client",
+        "assignee": "jim"
+    },
+    {
+        "id": 5,
+        "description": "Organize a meeting",
+        "assignee": "michael"
+    }
+]
