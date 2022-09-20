@@ -1,0 +1,14 @@
+ext {
+    datasourceProxy = '1.4.1'
+    testcontainers = '1.12.2'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation "net.ttddyy:datasource-proxy:${datasourceProxy}"
+    implementation 'org.postgresql:postgresql'
+    implementation "com.h2database:h2:${h2}"
+    testImplementation "org.testcontainers:postgresql:${testcontainers}"
+}
