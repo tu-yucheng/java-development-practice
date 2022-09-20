@@ -125,6 +125,20 @@
 - [BootstrapMode for JPA Repositories](spring-boot-data-2/docs/SpringBoot_JPA_BootstrapMode.md)
 - [Dynamic DTO Validation Config Retrieved from the Database](spring-boot-data-2/docs/SpringBoot_DynamicDTO_Validation.md)
 
+## spring-data-jpa-crud-1
+
+- [Spring Data JPA – Derived Delete Methods](spring-data-jpa-crud-1/docs/SpringData_Jpa_DeleteBy.md)
+- [Spring Data JPA Delete and Relationships](spring-data-jpa-crud-1/docs/SpringData_Jpa_Delete.md)
+- [INSERT Statement in JPA](spring-data-jpa-crud-1/docs/SpringData_Insert.md)
+- [Spring Data JPA Batch Inserts](spring-data-jpa-crud-1/docs/SpringData_Batch_Insert.md)
+- [Batch Insert/Update with Hibernate/JPA](spring-data-jpa-crud-1/docs/JPA_Hibernate_Batch_Insert.md)
+- [Difference Between save() and saveAndFlush() in Spring Data JPA](spring-data-jpa-crud-1/docs/SpringData_JPA_Save_SaveAndFlush.md)
+- [How to Implement a Soft Delete with Spring JPA](spring-data-jpa-crud-1/docs/SpringData_Soft_Delete.md)
+
+## spring-data-jpa-crud-2
+
+- [Generate Database Schema with Spring Data JPA](spring-data-jpa-crud-2/docs/SpringData_GenerateDbSchema.md)
+
 ## spring-security-core-1
 
 - [Spring Security – @PreFilter and @PostFilter](spring-security-core-1/docs/SpringSecurity_@PreFilter_@PostFilter.md)
