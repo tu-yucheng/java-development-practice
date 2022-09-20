@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id "jacoco"
+}
+
+jacoco {
+    toolVersion = "0.8.8"
+    reportsDir = file("$buildDir/jacocoReport")
+}
+
+jacocoTestReport {
+    dependsOn test
+
+    group = "Reporting"
+    description = "Generate Jacoco coverage reports after running tests."
+    reports {
+        xml.enabled true
+        html.enabled true
+    }
+}
+
+ext {
+    awaitility = '1.7.0'
+}
+
+dependencies {
+    implementation "org.apache.commons:commons-lang3:${commonsLang3}"
+    testImplementation "com.jayway.awaitility:awaitility:${awaitility}"
+}
