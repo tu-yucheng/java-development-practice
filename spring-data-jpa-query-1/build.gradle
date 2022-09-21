@@ -1,0 +1,11 @@
+ext {
+    datasourceProxy = '1.4.1'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'org.springframework:spring-oxm'
+    implementation "net.ttddyy:datasource-proxy:${datasourceProxy}"
+    implementation "com.h2database:h2:${h2}"
+}

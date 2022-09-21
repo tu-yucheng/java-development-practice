@@ -1,0 +1,19 @@
+ext {
+    jta = '1.1'
+    tomcatDbcp = '9.0.0.M26'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.security:spring-security-core'
+    implementation "com.h2database:h2:${h2}"
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation "javax.transaction:jta:${jta}"
+    implementation 'mysql:mysql-connector-java'
+    implementation "org.apache.tomcat:tomcat-dbcp:${tomcatDbcp}"
+    implementation 'org.hibernate:hibernate-core'
+    implementation 'org.hibernate:hibernate-envers'
+    testImplementation 'org.springframework:spring-test'
+    testImplementation 'org.springframework.security:spring-security-test'
+    testImplementation 'org.hsqldb:hsqldb'
+}
