@@ -132,8 +132,34 @@
 - [INSERT Statement in JPA](spring-data-jpa-crud-1/docs/SpringData_Insert.md)
 - [Spring Data JPA Batch Inserts](spring-data-jpa-crud-1/docs/SpringData_Batch_Insert.md)
 - [Batch Insert/Update with Hibernate/JPA](spring-data-jpa-crud-1/docs/SpringData_Hibernate_Batch_Insert.md)
-- [Difference Between save() and saveAndFlush() in Spring Data JPA](spring-data-jpa-crud-1/docs/SpringData_JPA_Save_SaveAndFlush.md)
+- [Difference Between save() and saveAndFlush() in Spring Data JPA](spring-data-jpa-crud-1/docs/SpringData_Save_SaveAndFlush.md)
 - [How to Implement a Soft Delete with Spring JPA](spring-data-jpa-crud-1/docs/SpringData_Soft_Delete.md)
+
+## spring-data-jpa-query-1
+
+- [The Exists Query in Spring Data](spring-data-jpa-query-1/docs/SpringData_ExistsQuery.md)
+- [Customizing the Result of JPA Queries with Aggregation Functions](spring-data-jpa-query-1/docs/SpringData_Aggregation_Function.md)
+- [Limiting Query Results with JPA and Spring Data JPA](spring-data-jpa-query-1/docs/SpringData_LimitQueryResult.md)
+- [Sorting Query Results with Spring Data](spring-data-jpa-query-1/docs/SpringData_Sorting.md)
+- [Spring Data JPA Query by Example](spring-data-jpa-query-1/docs/SpringData_QueryByExample.md)
+- [JPA Join Types](spring-data-jpa-query-1/docs/SpringData_JoinTypes.md)
+- [Spring Data JPA and Named Entity Graphs](spring-data-jpa-query-1/docs/SpringData_NamedEntityGraphs.md)
+
+## spring-data-jpa-query-2
+
+- [Spring Data JPA @Query](https://www.baeldung.com/spring-data-jpa-query)
+- [Use Criteria Queries in a Spring Data Application](https://www.baeldung.com/spring-data-criteria-queries)
+- [Hibernate Pagination](https://www.baeldung.com/hibernate-pagination)
+- [Sorting with Hibernate](https://www.baeldung.com/hibernate-sort)
+- [Stored Procedures with Hibernate](https://www.baeldung.com/stored-procedures-with-hibernate-tutorial)
+- [Eager/Lazy Loading In Hibernate](https://www.baeldung.com/hibernate-lazy-eager-loading)
+- [Auditing with JPA, Hibernate, and Spring Data JPA](https://www.baeldung.com/database-auditing-jpa)
+
+## spring-data-jpa-query-3
+
+- [Query Entities by Dates and Times with Spring Data JPA](https://www.baeldung.com/spring-data-jpa-query-by-date)
+- [JPA and Hibernate – Criteria vs. JPQL vs. HQL Query](https://www.baeldung.com/jpql-hql-criteria-query)
+- [Joining Tables With Spring Data JPA Specifications](https://www.baeldung.com/spring-jpa-joining-tables)
 
 ## spring-data-jpa-crud-2
 
