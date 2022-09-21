@@ -131,7 +131,7 @@
 - [Spring Data JPA Delete and Relationships](spring-data-jpa-crud-1/docs/SpringData_Jpa_Delete.md)
 - [INSERT Statement in JPA](spring-data-jpa-crud-1/docs/SpringData_Insert.md)
 - [Spring Data JPA Batch Inserts](spring-data-jpa-crud-1/docs/SpringData_Batch_Insert.md)
-- [Batch Insert/Update with Hibernate/JPA](spring-data-jpa-crud-1/docs/JPA_Hibernate_Batch_Insert.md)
+- [Batch Insert/Update with Hibernate/JPA](spring-data-jpa-crud-1/docs/SpringData_Hibernate_Batch_Insert.md)
 - [Difference Between save() and saveAndFlush() in Spring Data JPA](spring-data-jpa-crud-1/docs/SpringData_JPA_Save_SaveAndFlush.md)
 - [How to Implement a Soft Delete with Spring JPA](spring-data-jpa-crud-1/docs/SpringData_Soft_Delete.md)
 
