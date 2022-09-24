@@ -59,6 +59,55 @@
 
 - [How to Handle InterruptedException in Java](java-concurrency-basic-3/docs/Java_Interrupted_Exception.md)
 
+## java-concurrency-advanced-1
+
+- [Introduction to Thread Pools in Java](java-concurrency-advanced-1/docs/Java_ThreadPools.md)
+- [Guide to CountDownLatch in Java](java-concurrency-advanced-1/docs/Java_CountDownLatch.md)
+- [Guide to java.util.concurrent.Locks](java-concurrency-advanced-1/docs/Java_Concurrent_Locks.md)
+- [An Introduction to ThreadLocal in Java](java-concurrency-advanced-1/docs/Java_ThreadLocal.md)
+- [LongAdder and LongAccumulator in Java](java-concurrency-advanced-1/docs/Java_LongAdder_LongAccumulator.md)
+- [The Dining Philosophers Problem in Java](java-concurrency-advanced-1/docs/Java_Dining_Philoshophers.md)
+- [Guide to the Java Phaser](java-concurrency-advanced-1/docs/Java_Phaser.md)
+- [An Introduction to Atomic Variables in Java](java-concurrency-advanced-1/docs/Java_Atomic_Variables.md)
+- [CyclicBarrier in Java](java-concurrency-advanced-1/docs/Java_CyclicBarrier.md)
+
+## java-concurrency-advanced-2
+
+- [Semaphores in Java](java-concurrency-advanced-2/docs/Java_Semaphore.md)
+- [Daemon Threads in Java](java-concurrency-advanced-2/docs/Java_Daemon_Thread.md)
+- [Priority-based Job Scheduling in Java](java-concurrency-advanced-2/docs/Java_Priority_JobSchedule.md)
+- [Brief Introduction to Java Thread.yield()](java-concurrency-advanced-2/docs/Java_Thread_Yield.md)
+- [Print Even and Odd Numbers Using 2 Threads](java-concurrency-advanced-2/docs/Java_PrintEvenOddNumber.md)
+- [Java CyclicBarrier vs CountDownLatch](java-concurrency-advanced-2/docs/Java_CyclicBarrier_CountDownLatch.md)
+- [Guide to the Fork/Join Framework in Java](java-concurrency-advanced-2/docs/Java_ForkJoin.md)
+- [Guide to ThreadLocalRandom in Java](java-concurrency-advanced-2/docs/Java_ThreadLocalRandom.md)
+- [Passing Parameters to Java Threads](java-concurrency-advanced-2/docs/Java_Thread_Parameters.md)
+
+## java-concurrency-advanced-3
+
+- [Common Concurrency Pitfalls in Java](java-concurrency-advanced-3/docs/Java_Common_Concurrency_Pitfalls.md)
+- [Guide to RejectedExecutionHandler](java-concurrency-advanced-3/docs/Java_RejectedExecutionHandler.md)
+- [Guide to Work Stealing in Java](java-concurrency-advanced-3/docs/Java_WorkStealing.md)
+- [Asynchronous Programming in Java](java-concurrency-advanced-3/docs/Java_Asynchronous_Program.md)
+- [Java Thread Deadlock and Livelock](java-concurrency-advanced-3/docs/Java_Deadlock_Livelock.md)
+- [Guide to AtomicStampedReference in Java](java-concurrency-advanced-3/docs/Java_AtomicStampedReference.md)
+- [The ABA Problem in Concurrency](java-concurrency-advanced-3/docs/Java_ABA_Concurrency.md)
+- [Introduction to Lock-Free Data Structures with Java Examples](java-concurrency-advanced-3/docs/Java_LockFree_Program.md)
+- [Introduction to Exchanger in Java](java-concurrency-advanced-3/docs/Java_Exchanger.md)
+- [Why Not To Start A Thread In The Constructor?](java-concurrency-advanced-3/docs/Java_Thread_Constructor.md)
+
+## java-concurrency-advanced-4
+
+- [Binary Semaphore vs Reentrant Lock](java-concurrency-advanced-4/docs/Java_BinarySemaphore_ReentrantLock.md)
+- [Bad Practices With Synchronization](java-concurrency-advanced-4/docs/Java_Sync_BadPractices.md)
+- [Start Two Threads at the Exact Same Time in Java](java-concurrency-advanced-4/docs/Java_StartTwoThread_AtSameTime.md)
+- [Volatile Variables and Thread Safety](java-concurrency-advanced-4/docs/Java_Volatile_ThreadSafety.md)
+- [Producer-Consumer Problem With Example in Java](java-concurrency-advanced-4/docs/Java_Producer_Consumer.md)
+- [Acquire a Lock by a Key in Java](java-concurrency-advanced-4/docs/Java_AcquireLock_ByKey.md)
+- [Differences Between set() and lazySet() in Java Atomic Variables](java-concurrency-advanced-4/docs/Java_Atomic_SetAndLazySet.md)
+- [Volatile vs. Atomic Variables in Java](java-concurrency-advanced-4/docs/Java_Volatile_Atomic.md)
+- [What Is “Locked Ownable Synchronizers” in Thread Dump?](java-concurrency-advanced-4/docs/Java_Locked_Ownable_Synchronizers.md)
+
 ## spring-framework-core-1
 
 - [Introduction to Spring’s StreamUtils](spring-framework-core-1/docs/Spring_StreamUtils.md)
@@ -166,7 +215,7 @@
 ## spring-data-jpa-query-3
 
 - [Query Entities by Dates and Times with Spring Data JPA](spring-data-jpa-query-2/docs/SpringData_@Query_Annotation.md)
-- [JPA and Hibernate – Criteria vs. JPQL vs. HQL Query](spring-data-jpa-query-2/docs/SpringData_Criteria.md)
+- [JPA and Hibernate – Criteria vs. JPQL vs. HQL Query](spring-data-jpa-query-2/docs/SpringData_Criteria_Query.md)
 - [Joining Tables With Spring Data JPA Specifications](https://www.baeldung.com/spring-jpa-joining-tables)
 
 ## spring-security-core-1
