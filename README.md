@@ -55,6 +55,10 @@
 - [How to Get the Number of Threads in a Java Process](java-concurrency-basic-2/docs/Java_Get_ThreadNumber.md)
 - [Set the Name of a Thread in Java](java-concurrency-basic-2/docs/Java_Set_ThreadName.md)
 
+## java-concurrency-basic-3
+
+- [How to Handle InterruptedException in Java](java-concurrency-basic-3/docs/Java_Interrupted_Exception.md)
+
 ## spring-framework-core-1
 
 - [Introduction to Spring’s StreamUtils](spring-framework-core-1/docs/Spring_StreamUtils.md)
@@ -135,6 +139,10 @@
 - [Difference Between save() and saveAndFlush() in Spring Data JPA](spring-data-jpa-crud-1/docs/SpringData_Save_SaveAndFlush.md)
 - [How to Implement a Soft Delete with Spring JPA](spring-data-jpa-crud-1/docs/SpringData_Soft_Delete.md)
 
+## spring-data-jpa-crud-2
+
+- [Generate Database Schema with Spring Data JPA](spring-data-jpa-crud-2/docs/SpringData_GenerateDbSchema.md)
+
 ## spring-data-jpa-query-1
 
 - [The Exists Query in Spring Data](spring-data-jpa-query-1/docs/SpringData_ExistsQuery.md)
@@ -157,13 +165,9 @@
 
 ## spring-data-jpa-query-3
 
-- [Query Entities by Dates and Times with Spring Data JPA](https://www.baeldung.com/spring-data-jpa-query-by-date)
-- [JPA and Hibernate – Criteria vs. JPQL vs. HQL Query](https://www.baeldung.com/jpql-hql-criteria-query)
+- [Query Entities by Dates and Times with Spring Data JPA](spring-data-jpa-query-2/docs/SpringData_@Query_Annotation.md)
+- [JPA and Hibernate – Criteria vs. JPQL vs. HQL Query](spring-data-jpa-query-2/docs/SpringData_Criteria.md)
 - [Joining Tables With Spring Data JPA Specifications](https://www.baeldung.com/spring-jpa-joining-tables)
-
-## spring-data-jpa-crud-2
-
-- [Generate Database Schema with Spring Data JPA](spring-data-jpa-crud-2/docs/SpringData_GenerateDbSchema.md)
 
 ## spring-security-core-1
 
